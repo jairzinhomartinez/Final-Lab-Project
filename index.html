@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <!--
+      Final Project: IST 226 Portfolio
+      
+      Author: Jair Martinez
+      Date:   8/2/2025
+
+      Filename:  index.html
+      Description: This is the main portfolio page showcasing assignments, media samples, and a contact form
+
+   -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jair Martinez | IST 226 Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Jair Martinez</h1>
+    <p>Contact: ymartija5@my.gvltec.edu | (864)-686-3010</p>
+    <img src="images/photo.jpg" alt="Jair Martinez" class="profile-img" />
+  </header>
+
+  <main class="columns">
+    <section class="column">
+      <h2>Assignments</h2>
+      <ul>
+        <li><a href="assignments/tulsaclock/index.html" target="_blank">Tulsa Clock</a><br><small>Clock animation and interactive time updates with JavaScript.</small></li>
+        <li><a href="assignments/astaire/index.html" target="_blank">Fred Astaire Biography</a><br><small>Embedded media, biography layout, and CSS transitions.</small></li>
+        <li><a href="assignments/komatsu-page/index.html" target="_blank">Komatsu Page</a><br><small>Structured informational content and styling layout practice.</small></li>
+        <li><a href="assignments/Daycare/index.html" target="_blank">Daycare Website</a><br><small>Multi-page site with semantic layout and child-care theme.</small></li>
+        <li><a href="assignments/living-world/index.html" target="_blank">Living World</a><br><small>Semantic layout with structured content and clean formatting.</small></li>
+        <li><a href="assignments/Pandaisia-Chocolates-website/index.html" target="_blank">Pandaisia Chocolates</a><br><small>Tables, layout design, and color styling practice.</small></li>
+      </ul>
+    </section>
+
+    <section class="column">
+      <h2>My Current Fixation (Bouldering)</h2>
+<video class="hobby-video" controls muted>
+  <source src="media/bouldering-fixation.mp4" type="video/mp4" />
+
+</video>
+<p class="video-description">
+  Outside of web development, I enjoy training and bouldering. This clip captures a recent personal challenge.
+</p>
+
+
+
+      <h3>Assignment Table</h3>
+      <table>
+        <colgroup>
+          <col span="1" style="background-color:#e3f2fd">
+          <col span="1" style="background-color:#fce4ec">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Assignment</th>
+            <th>Topic</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Tulsa Clock</td><td>JavaScript & Animation</td></tr>
+          <tr><td>Fred Astaire</td><td>Media & Transitions</td></tr>
+          <tr><td>Komatsu</td><td>Informational Layout</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="2">See all assignments above for full details</td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section class="column">
+      <h2>Contact Form</h2>
+      <form action="#" method="post">
+        <label for="fullname">Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="feedback">Message:</label>
+        <textarea id="feedback" name="feedback" rows="4"></textarea><br>
+        <label for="topic">Favorite Topic:</label>
+        <select id="topic" name="topic">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="media">Media</option>
+        </select><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created August 2025 | IST 226 – Greenville Technical College</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+body {
+  font-family: 'Segoe UI', Inter, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #2d2d2d;
+  line-height: 1.6;
+}
+header {
+  position: relative;
+  background-color: #364f6b; /* Indigo base */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 4px solid #ffd4b2;
+  overflow: hidden;
+  z-index: 1;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/pepe.png");
+  background-repeat: repeat;
+  background-size: 80px auto;
+  opacity: 0.10; /* Adjust opacity here */
+  filter: grayscale(80%) brightness(0.6) sepia(0.3) hue-rotate(190deg);
+  z-index: 0;
+}
+
+.profile-img {
+  width: 140px;
+  border-radius: 12px;
+  margin-top: 20px;
+  filter: grayscale(60%);
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+.profile-img:hover {
+  transform: scale(1.05);
+}
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.column {
+  flex: 1 1 30%;
+  min-width: 280px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #b3cde0;
+}
+.column:hover {
+  background-color: #f4faff;
+}
+a {
+  color: #364f6b;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: underline;
+}
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #b3cde0;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 1rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+thead {
+  background-color: #b3cde0;
+}
+tfoot {
+  background-color: #ffd4b2;
+}
+footer {
+  background-color: #364f6b;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #364f6b;
+}
+
+.hobby-video {
+  width: 80%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.video-description {
+  font-style: sans-serif;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+}
